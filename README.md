@@ -19,7 +19,7 @@ crane_x7のteaching play backのサンプルを実行
    本プログラムは[Dynamixel SDK](https://github.com/ROBOTIS-GIT/DynamixelSDK)を使用している  
    * SDKのcloneを行う  
    ``` 
-   $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git `  
+   $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git   
    ```
    make
    * buildフォルダ内にある[Makefile](./teaching_play_back/build/Makefile)を使用する
