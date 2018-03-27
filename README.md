@@ -58,7 +58,7 @@ crane_x7のteaching play backのサンプルを実行
    |l| Play back date | 保存した角度を再生 |
    
    #### MOVE POSITION   
-   * プログラム内のgoal_positionに設定された角度(deg)に移動(初期設定は初期姿勢になっている)
+   * [プログラム](./teaching_play_back/example_CRANE-X7.cpp)内のgoal_positionに設定された角度(deg)に移動(初期設定は初期姿勢になっている)
     
    #### Offset Position  
    * 最大動作角の中心を初期姿勢として、全サーボを初期姿勢にする
