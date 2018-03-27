@@ -55,7 +55,7 @@ crane_x7のteaching play backのサンプルを実行
    |p| MOVE POSITION | 指定の角度に移動 |
    |s| Offset Position | 初期姿勢に移動 |
    |t| Teaching | play back用の角度を保存 |
-   |l| Play back date | 保存した角度を再生 |
+   |l| Play back data | 保存した角度を再生 |
    
    #### MOVE POSITION   
    * [プログラム](./teaching_play_back/example_CRANE-X7.cpp)内のgoal_positionに設定された角度(deg)に移動(初期設定は初期姿勢になっている)
@@ -69,7 +69,7 @@ crane_x7のteaching play backのサンプルを実行
    * それ以外のキーが押された時の角度をテキストに保存する　
    * もう一度、teachingを行うまで、テキストデータは書き換わりません
     
-   #### play back date(point to pointの再生)   
+   #### play back data(point to pointの再生)   
    * 全サーボがトルクONになり、初期姿勢に移動する   
    * テキストのデータを上から順番に再生を行う   
    * 再生の時間を取るためにsleepをプログラムに追加   
