@@ -57,20 +57,25 @@ crane_x7のteaching play backのサンプルを実行
    |t| Teaching | play back用の角度を保存 |
    |l| Play back date | 保存した角度を再生 |
    
-   * MOVE POSITION   
-    プログラム内のgoal_positionに設定された角度(deg)に移動
+   #### MOVE POSITION   
+    * プログラム内のgoal_positionに設定された角度(deg)に移動
     
-   * Offset Position  
-    最大動作角の中心を初期姿勢として、全サーボを初期姿勢にする
+   #### Offset Position  
+    * 最大動作角の中心を初期姿勢として、全サーボを初期姿勢にする
     
-   * Teaching   
-    全サーボがトルクOFFの状態になり、角度をテキストデータに保存   
-    `q`を押すと終了する   
-    それ以外のキーが押された時の角度をテキストに保存する　
+   #### Teaching   
+    * 全サーボがトルクOFFの状態になり、角度をテキストデータに保存   
+    * `q`を押すと終了する   
+    * それ以外のキーが押された時の角度をテキストに保存する　
     
-   * play back date   
-    全サーボがトルクONになり、初期姿勢に移動する   
-    テキストのデータを上から順番に再生を行う   
-    再生の時間を取るためにsleepをプログラムに追加   
-    全部のデータを再生終了すると、初期姿勢に戻る
+   #### play back date   
+    * 全サーボがトルクONになり、初期姿勢に移動する   
+    * テキストのデータを上から順番に再生を行う   
+    * 再生の時間を取るためにsleepをプログラムに追加   
+    * 全部のデータを再生終了すると、初期姿勢に戻る
     
+## License
+
+This repository is licensed under the Apache License Version 2.0 License, see [LICENSE](./LICENSE).
+
+このリポジトリはApache License Version 2.0で公開されています。詳細は[LICENSE](./LICENSE)を確認してください。
