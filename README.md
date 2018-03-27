@@ -76,6 +76,6 @@ crane_x7のteaching play backのサンプルを実行
     
 ## License
 
-This repository is licensed under the Apache License Version 2.0 License, see [LICENSE](./LICENSE).
+This repository is licensed under the Apache License Version 2.0, see [LICENSE](./LICENSE).
 
 このリポジトリはApache License Version 2.0で公開されています。詳細は[LICENSE](./LICENSE)を確認してください。
