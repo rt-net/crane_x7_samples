@@ -10,18 +10,18 @@
 #include <stdio.h>
 #include <unistd.h>
 
-#include "dynamixel_sdk.h"                                  // Dynamixel SDK libraryのインクルード
+#include "dynamixel_sdk.h"									// Dynamixel SDK libraryのインクルード
 
-// Control table address						            // Dynamixel コントロールテーブル参照のアドレス値
-#define ADDR_PRO_TORQUE_ENABLE          64
-#define ADDR_PRO_GOAL_POSITION          116
-#define ADDR_PRO_PRESENT_POSITION       132
+// Control table address									// Dynamixel コントロールテーブル参照のアドレス値
+#define ADDR_PRO_TORQUE_ENABLE			64
+#define ADDR_PRO_GOAL_POSITION			116
+#define ADDR_PRO_PRESENT_POSITION		132
 #define ADDR_PRO_PROFILE_VELOCITY		112
 
 // Data Byte Length											// Dynamixel アドレス毎のデータ長
-#define LEN_PRO_LED_RED                 1
-#define LEN_PRO_GOAL_POSITION           4
-#define LEN_PRO_PRESENT_POSITION        4
+#define LEN_PRO_LED_RED					1
+#define LEN_PRO_GOAL_POSITION			4
+#define LEN_PRO_PRESENT_POSITION		4
 #define LEN_PRO_PROFILE_VELOCITY		4
 
 // Protocol version
@@ -29,13 +29,13 @@
 
 // Default setting
 #define BAUDRATE                        3000000				// サーボの通信レート
-#define DEVICENAME                      "/dev/ttyUSB0"      // PCに接続しているポート
+#define DEVICENAME                      "/dev/ttyUSB0"		// PCに接続しているポート
 // ex) Windows: "COM1"   Linux: "/dev/ttyUSB0" Mac: "/dev/tty.usbserial-*"
 
 #define TORQUE_ENABLE                   1                   // トルクON用のフラグ
 #define TORQUE_DISABLE                  0                   // トルクOFF用のフラグ
 
-#define DXL_MOVING_STATUS_THRESHOLD     20                  // Dynamixel moving status threshold
+#define DXL_MOVING_STATUS_THRESHOLD		20					// Dynamixel moving status threshold
 #define DXL_CENTER_POSITION_VALUE		2048				// Offset(出力軸の中心角度)　(value)
 #define DXL_PROFILE_VELOCITY			30					// サーボモータの動作速度　(rpm)
 
@@ -107,7 +107,7 @@ class CR7 {
 	
 	//　play back用テキストデータの定義
 	FILE *fp;
-	const char *fname = "date.txt";
+	const char *fname = "data.txt";
 
 	bool Open_port();							//通信ポートを開く
 	bool Set_port_baudrate();					//通信レートの設定
@@ -326,7 +326,7 @@ bool CR7::Teaching_Play_Frame(){
  */
 bool CR7::Play_Back(){
 	double pose[8];
-	//Play back date position
+	//Play back data position
 	fp = fopen( fname, "r");																											//モード:r(読み込み専用)でファイルを開く
 	if(fp == NULL){
 		printf("can not open\n");
@@ -382,7 +382,7 @@ int main()
 	if(!cr.Set_port_baudrate()) return 0;																								//ポートの通信レートを設定
 
 	while(1){
-		printf("q:exit o:[SERVO ON] i:[SERVO OFF] p:[MOVE POSITION] s:[Offset Position] t:[Teaching] l:[Play back date]\n");
+		printf("q:exit o:[SERVO ON] i:[SERVO OFF] p:[MOVE POSITION] s:[Offset Position] t:[Teaching] l:[Play back data]\n");
 		char ch = getchar();							//キー入力　"q":プログラム終了
 		switch(ch){
 			case 'q':									//プログラム終了
