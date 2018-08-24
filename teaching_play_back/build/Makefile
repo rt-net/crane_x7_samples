@@ -33,7 +33,7 @@ DIR_OBJS   = .objects
 CX          = g++ -std=c++11
 CXFLAGS     = -O2 -O3 -DLINUX -D_GNU_SOURCE -Wall $(INCLUDES) $(FORMAT) -g
 LNKCC       = $(CX)
-LNKFLAGS    = $(CXFLAGS) #-Wl,-rpath,$(DIR_THOR)/lib
+LNKFLAGS    = $(CXFLAGS) -Wl,--rpath,$(DIR_DXL)/build/linux64
 FORMAT      = -m64
 
 #---------------------------------------------------------------------
