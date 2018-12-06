@@ -1,4 +1,4 @@
-# crane_x7
+# crane_x7_samples
 研究・教材用アームロボットのCRANE-X7のサンプルプログラム集
 
 ## crane_x7用 teaching play back
@@ -13,8 +13,8 @@ crane_x7のteaching play backのサンプルを実行
  
 ### コンパイル手順 
    ```
-   $ git clone https://github.com/rt-net/crane_x7.git 
-   $ cd crane_x7  
+   $ git clone https://github.com/rt-net/crane_x7_samples.git 
+   $ cd crane_x7_samples  
    ```
    本プログラムは[Dynamixel SDK](https://github.com/ROBOTIS-GIT/DynamixelSDK)を使用している  
    * SDKのclone,makeを行う  
